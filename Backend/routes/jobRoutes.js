@@ -31,6 +31,12 @@ router.post("/:id/apply", auth, applyJob);
 
 
 
-router.get("/:id/applicants", auth, getJobApplicants);
+router.get(
+  "/:id/applicants",
+  protect,
+  roleCheck("recruiter"),
+  getJobApplicants
+);
+
 
 module.exports = router;

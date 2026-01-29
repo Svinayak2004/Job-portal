@@ -89,7 +89,7 @@ exports.applyJob = async (req, res) => {
 };
 
 
-// GET JOB APPLICANTS (Recruiter)
+// GET JOB APPLICANTS (Recruiter)2
 exports.getJobApplicants = async (req, res) => {
   try {
     // Only recruiter
